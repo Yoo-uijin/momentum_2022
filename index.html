@@ -9,12 +9,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <div id="quote">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="container__box">
+    <header>
+      <div>
         <h2 id="clock">00:00</h2>
         <form id="login-form" class="hidden">
           <input
@@ -26,30 +22,45 @@
           <input type="submit" class="hidden" value="Log In" />
         </form>
         <h1 id="greeting" class="hidden"></h1>
-        <form
-          target="_blank"
-          action="https://www.google.co.kr/search"
-          id="search-form"
-        >
-          <button type="reset">
-            <i class="fa-solid fa-arrow-rotate-right fa-lg"></i>
-          </button>
-          <input type="text" name="query" value="" placeholder="Ask Google !" />
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-          </button>
-        </form>
       </div>
-    </div>
-    <form id="todo-form">
-      <input type="text" placeholder="Write your To Do List" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
 
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+
+      <form
+        target="_blank"
+        action="https://www.google.co.kr/search"
+        id="search-form"
+      >
+        <button type="reset">
+          <i class="fa-solid fa-arrow-rotate-right fa-lg"></i>
+        </button>
+        <input type="text" name="query" value="" placeholder="Ask Google !" />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </button>
+      </form>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write your To Do List"
+          maxlength="15"
+          required
+        />
+        <i class="fa-solid fa-angle-down"></i>
+      </form>
+      <ul id="todo-list"></ul>
+    </main>
     <script
       src="https://kit.fontawesome.com/3478f919dc.js"
       crossorigin="anonymous"
