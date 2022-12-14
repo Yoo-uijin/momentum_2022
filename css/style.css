@@ -27,7 +27,7 @@ img {
 }
 
 .container {
-  height: 53vh;
+  height: 63vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -140,42 +140,32 @@ img {
 }
 
 #search-form {
-  position: absolute;
-  bottom: 2.95rem;
-  right: 0.7rem;
-}
-
-.search {
-  width: 150px;
-  height: 30px;
+  width: 40rem;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  margin: 3rem auto 0 auto;
+  border: 1px solid white;
+  padding: 0.3rem 1rem;
 }
 
-.search button {
+#search-form button {
   border: none;
-  width: 10%;
   background-color: transparent;
   color: white;
   cursor: pointer;
 }
 
-.search input[type="text"] {
-  width: 80%;
-  height: 30px;
+#search-form input[type="text"] {
+  width: 100%;
   background-color: transparent;
   border: none;
-  text-align: right;
+  text-align: center;
 }
 
-.search input,
-.search input::placeholder,
-.search input:focus {
+#search-form input,
+#search-form input::placeholder,
+#search-form input:focus {
   font-size: 1.25rem;
   color: white;
-}
-
-.search input:focus {
-  border-bottom: 2px solid white;
 }
