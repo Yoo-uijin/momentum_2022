@@ -100,16 +100,16 @@ img {
 
 #todo-form input::placeholder,
 #todo-form input:focus {
-  font-size: 1.5625rem;
+  font-size: 1.4rem;
   color: white;
 }
 
 #todo-list li {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 #todo-list span {
-  font-size: 1.625rem;
+  font-size: 1.3rem;
   color: white;
   border-bottom: 2px solid white;
 }
